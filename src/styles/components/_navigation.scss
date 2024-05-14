@@ -1,0 +1,29 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    img {}
+
+    ul {
+        display: flex;
+        margin: 30px;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+
+            :hover {
+                border-bottom: 2px solid black;
+            }
+
+            li {
+                border-bottom: 2px solid transparent;
+            }
+        }
+
+        li {}
+    }
+}
