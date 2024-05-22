@@ -9,7 +9,7 @@ const About = () => {
             <Navigation />
             <h1>A propos</h1>
             <br />
-            <ImageBanner />
+            <ImageBanner imgsrc="src/assets/mountains.png"/>
             <Footer />
         </div>
     );

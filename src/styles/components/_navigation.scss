@@ -2,9 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2rem;
-
-    img {}
+    margin: 3em;
 
     ul {
         display: flex;
@@ -23,7 +21,5 @@
                 border-bottom: 2px solid transparent;
             }
         }
-
-        li {}
     }
 }

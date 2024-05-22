@@ -1,0 +1,69 @@
+.rental {
+    margin: 3em;
+
+    .carousel {
+        display: flex;
+        position: relative;
+        height: 415px;
+        align-items: center;
+
+        .arrow {
+            position: absolute;
+        }
+
+        .left {
+            left: 20px;
+        }
+
+        .right {
+            right: 20px;
+        }
+
+        .slide {
+            border-radius: 25px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .title {
+        color: #FF6060;
+    }
+
+    .tag {
+        color: white;
+        background-color: #FF6060;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 415px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+.custom-bullet {
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    display: none;
+}
+
+.swiper-pagination-bullet-active {
+    display: inline-block;
+    color: white;
+    background: none;
+}
