@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import jsonData from '../assets/appartment.json';
-import leftarrow from '../assets/leftarrow.svg';
-import rightarrow from '../assets/rightarrow.svg';
 import Carousel from './Carousel';
 
 const Rental = () => {
