@@ -4,7 +4,7 @@ import kasaLogo from '../assets/kasalogo.svg'
 
 const Navigation = () => {
     return (
-        <div className="navigation">
+        <div id="navigation">
             <img src={kasaLogo} alt="Kasa logo" />
             <div>
                 <ul>

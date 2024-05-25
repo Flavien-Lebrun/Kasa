@@ -1,17 +1,15 @@
-.navigation {
+#navigation {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 3em;
 
     ul {
         display: flex;
-        margin: 30px;
         list-style-type: none;
 
         a {
             text-decoration: none;
-            padding: 10px;
+            padding-left: 40px;
 
             :hover {
                 border-bottom: 2px solid black;
@@ -19,6 +17,15 @@
 
             li {
                 border-bottom: 2px solid transparent;
+                font-size: 25px;
+                height: 30px;
+            }
+        }
+
+        .nav-active {
+
+            li {
+                border-bottom: 2px solid black;
             }
         }
     }

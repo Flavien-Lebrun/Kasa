@@ -1,61 +1,85 @@
-.rental {
-    margin: 3em;
+#rental {
 
-    .carousel {
+    .presentation {
         display: flex;
-        position: relative;
-        height: 415px;
-        align-items: center;
-
-        .arrow {
-            position: absolute;
-        }
-
-        .left {
-            left: 20px;
-        }
-
-        .right {
-            right: 20px;
-        }
-
-        .slide {
-            border-radius: 25px;
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-
-        p {
-            position: absolute;
-            left: 50%;
-            bottom: 0%;
-            color: white;
-            font-size: 18px;
-            font-weight: 500;
-        }
-    }
-
-    .description {
         font-weight: 500;
 
-        .title {
-            color: #FF6060;
-            font-size: 36px;
+        .presentation-details {
+            display: flex;
+            flex-direction: column;
 
+            h1 {
+                color: $main-color;
+                font-size: 36px;
+                font-weight: 500;
+                margin: 0px;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 17px;
+            }
+
+
+            .tags {
+                display: flex;
+                flex-direction: row;
+
+                .tag {
+                    color: white;
+                    background-color: $main-color;
+                    font-weight: 600;
+                    font-size: 14px;
+                    border-radius: 13px;
+                    height: 25px;
+                    padding: 6px 25px 2px 25px;
+                    margin-right: 10px;
+                }
+            }
         }
 
-        .tag {
-            color: white;
-            background-color: #FF6060;
-            font-weight: 700;
-            font-size: 14px;
-            border-radius: 10px;
-            width: 115px;
-            height: 25px;
-            padding: 8px;
-            margin-right: 10px;
+        .presentation-hoster {
+            margin-left: auto;
+            width: 16%;
+
+            .hoster-details {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-bottom: 10%;
+
+                p {
+                    color: $main-color;
+                    white-space: pre-wrap;
+                    font-size: 18px;
+                    font-weight: 400;
+                    align-content: center;
+                    text-align: right;
+                    padding-right: 10px;
+                    margin: 0;
+                }
+
+                img {
+                    border-radius: 50%;
+                    width: 40%;
+                }
+            }
+
+            .rating {
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                display: flex;
+
+                i {
+                    font-size: 1.5em;
+                    padding-left: 6%;
+                }
+            }
         }
     }
 
+    .drop-down-menus {
+        display: flex;
+        justify-content: space-between;
+    }
 }

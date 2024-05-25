@@ -2,14 +2,14 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import ImageBanner from '../components/ImageBanner';
+import Infos from '../components/Infos';
 
 const About = () => {
     return (
         <div>
             <Navigation />
-            <h1>A propos</h1>
-            <br />
-            <ImageBanner imgsrc="src/assets/mountains.png"/>
+            <ImageBanner imgsrc="src/assets/mountains.png" opacityValue={0.3} />
+            <Infos />
             <Footer />
         </div>
     );

@@ -9,7 +9,7 @@ function AppartmentCarousel() {
   }, []);
 
   return (
-    <div className='appartment-carousel'>
+    <div id='appartment-carousel'>
         {data.map((item, index) => (
             <figure key={index} className="appartment-card">
                 <a href={`/rental/${item.id}`}>

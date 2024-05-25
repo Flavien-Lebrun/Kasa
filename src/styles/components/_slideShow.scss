@@ -1,0 +1,35 @@
+#slideshow {
+    display: flex;
+    position: relative;
+    height: 415px;
+    align-items: center;
+    margin-bottom: 2em;
+
+    .arrow {
+        position: absolute;
+    }
+
+    .left {
+        left: 20px;
+    }
+
+    .right {
+        right: 20px;
+    }
+
+    .slide {
+        border-radius: 25px;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    p {
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

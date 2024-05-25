@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import leftarrow from '../assets/leftarrow.svg';
 import rightarrow from '../assets/rightarrow.svg';
 
-const Carousel = ({ pictures }) => {
+const Slideshow = ({ pictures }) => {
   const [ counter, setCounter ] = useState(0);
 
   const previousImage = () => {
@@ -24,17 +24,17 @@ const Carousel = ({ pictures }) => {
   }
 
   return (
-    <div className="carousel">
+    <div id="slideshow">
       {pictures.length > 1 && (
         <>
-        <img class="arrow left" src={leftarrow} onClick={previousImage}></img>
-        <img class="arrow right" src={rightarrow} onClick={nextImage}></img>
+        <img className="arrow left" src={leftarrow} onClick={previousImage} alt='Previous'></img>
+        <img className="arrow right" src={rightarrow} onClick={nextImage} alt='Next'></img>
+        <p>{counter + 1} / {pictures.length}</p>
         </>
       )}
       <img src={pictures[counter]} className='slide' />
-      <p>{counter + 1} / {pictures.length}</p>
     </div>
   )
 };
 
-export default Carousel;
+export default Slideshow;

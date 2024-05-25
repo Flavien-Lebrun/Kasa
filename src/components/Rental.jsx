@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import jsonData from '../assets/appartment.json';
-import Carousel from './Carousel';
+import Slideshow from './SlideShow';
+import StarRating from './StarRating';
+import TextDropDown from './TextDropDown';
 
 const Rental = () => {
   const {rentalId} = useParams();
@@ -14,13 +16,12 @@ const Rental = () => {
   }, []);
   
   useEffect(() => {
-    // Exécuter la logique de recherche seulement après que les données ont été chargées
     if (data.length > 0) {
         const foundElement = data.find(item => item.id === rentalId);
         if (foundElement) {
             setElement(foundElement);
         } else {
-            navigate('/not-found'); // Redirection si aucun élément trouvé
+            navigate('/not-found');
         }
     }
   }, [data, rentalId, navigate]);
@@ -29,23 +30,33 @@ const Rental = () => {
     return null;
   }
 
-  const { title, cover, location, pictures } = element;
+  const { title, location, pictures, host, rating, description, equipments } = element;
+  const formattedName = host.name.replace(" ", "\n");
 
   return (
-    <div className='rental'>
-      {/* <div className="carousel"> */}
-        {/* <img class="arrow left" src={leftarrow}></img>
-        <img class="arrow right" src={rightarrow}></img>
-        <img src={cover} alt={title} className='slide' /> */}
-        <Carousel pictures={pictures} />
-        {/* <p></p>
-      </div> */}
-      <div className="description">
-        <h1 className='title'>{title}</h1>
-        <p>{location}</p>
-        {element.tags.map((tag, tagIndex) => (
-          <span key={tagIndex} className="tag">{tag}</span>
-        ))}
+    <div id='rental'>
+        <Slideshow pictures={pictures} />
+      <div className="presentation">
+        <div className='presentation-details'>
+          <h1>{title}</h1>
+          <p>{location}</p>
+          <div className="tags">
+            {element.tags.map((tag, tagIndex) => (
+            <span key={tagIndex} className="tag">{tag}</span>
+          ))}
+          </div>
+        </div>
+        <div className="presentation-hoster">
+          <div className="hoster-details">
+            <p>{formattedName}</p>
+            <img src={host.picture} className='hoster-picture' alt={`Picture of ${host.name}`} />
+          </div>
+          <StarRating rating={rating} />
+        </div>
+      </div>
+      <div className="drop-down-menus">
+        <TextDropDown dropdownname = "Description" text={description} isAList={false} />
+        <TextDropDown dropdownname = "Équipements" text={equipments} isAList={true} />
       </div>
     </div>
   );

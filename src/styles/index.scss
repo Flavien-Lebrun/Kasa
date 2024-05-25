@@ -1,8 +1,14 @@
+$main-color: #FF6060;
+$second-color: #F6F6F6;
+
 @import "./components/navigation";
 @import "./components/footer";
 @import "./components/imageBanner";
 @import "./components/appartmentCarousel";
 @import "./components/rental";
+@import "./components/slideShow";
+@import "./components/textDropDown";
+@import "./components/infos";
 
 :root {
   font-family: "Montserrat", sans-serif;
@@ -42,4 +48,12 @@ button {
 
 #root {
   width: 100%;
+}
+
+#appartment-carousel,
+#banner,
+#navigation,
+#rental,
+#infos-section {
+  margin: 3em 6em 3em 6em;
 }
