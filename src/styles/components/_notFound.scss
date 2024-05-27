@@ -1,0 +1,24 @@
+#notFound {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+    h1 {
+        font-size: 20em;
+        color: $main-color;
+        margin: 5% 0px 5% 0px;
+    }
+
+    p {
+        font-size: 2.3em;
+        color: $main-color;
+    }
+
+    a {
+        font-size: 1.1em;
+        height: 1.2em;
+        font-weight: 400;
+        border-bottom: 1px solid #000;
+        margin: 8% 0px 8% 0px;
+    }
+}

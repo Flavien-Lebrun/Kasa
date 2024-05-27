@@ -9,6 +9,7 @@ $second-color: #F6F6F6;
 @import "./components/slideShow";
 @import "./components/textDropDown";
 @import "./components/infos";
+@import "./components/notFound";
 
 :root {
   font-family: "Montserrat", sans-serif;
@@ -54,6 +55,9 @@ button {
 #banner,
 #navigation,
 #rental,
-#infos-section {
+#infos-section,
+#notFound {
   margin: 3em 6em 3em 6em;
 }
+
+@media (max-width: 768px) {}
