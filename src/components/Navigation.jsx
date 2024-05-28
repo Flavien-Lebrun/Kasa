@@ -7,14 +7,14 @@ const Navigation = () => {
         <div id="navigation">
             <img src={kasaLogo} alt="Kasa logo" />
             <div>
-                <ul>
+                <div>
                     <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                        <li>Accueil</li>
+                        <p>Accueil</p>
                     </NavLink>
-                    <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                        <li>A Propos</li>
+                    <NavLink to="/about" id="about-button" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                        <p>A Propos</p>
                     </NavLink>
-                </ul>
+                </div>
             </div>
         </div>
     );

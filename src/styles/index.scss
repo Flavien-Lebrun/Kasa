@@ -4,7 +4,7 @@ $second-color: #F6F6F6;
 @import "./components/navigation";
 @import "./components/footer";
 @import "./components/imageBanner";
-@import "./components/appartmentCarousel";
+@import "./components/appartmentGrid";
 @import "./components/rental";
 @import "./components/slideShow";
 @import "./components/textDropDown";
@@ -51,7 +51,7 @@ button {
   width: 100%;
 }
 
-#appartment-carousel,
+#appartment-grid,
 #banner,
 #navigation,
 #rental,
@@ -60,4 +60,50 @@ button {
   margin: 3em 6em 3em 6em;
 }
 
-@media (max-width: 768px) {}
+@media (min-width: 900px) and (max-width: 1200px) {
+
+  #appartment-grid,
+  #banner,
+  #navigation,
+  #rental,
+  #infos-section,
+  #notFound {
+    margin: 1.8em 3.5em 1.8em 3.5em;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+
+  #appartment-grid,
+  #banner,
+  #navigation,
+  #rental,
+  #infos-section,
+  #notFound {
+    margin: 1.6em 2.5em 1.6em 2.5em;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 700px) {
+
+  #appartment-grid,
+  #banner,
+  #navigation,
+  #rental,
+  #infos-section,
+  #notFound {
+    margin: 1.5em 2em 1.5em 2em;
+  }
+}
+
+@media (max-width: 450px) {
+
+  #appartment-grid,
+  #banner,
+  #navigation,
+  #rental,
+  #infos-section,
+  #notFound {
+    margin: 1.5em;
+  }
+}

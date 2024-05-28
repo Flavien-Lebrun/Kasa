@@ -1,0 +1,112 @@
+#appartment-grid {
+    padding: 3em;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+    background-color: #F6F6F6;
+
+    .appartment-card {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding-top: 100%;
+        border-radius: 10px;
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 50%;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+                border-radius: 10px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            h4 {
+                width: 85%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                padding: 1em;
+                color: #fff;
+                z-index: 2;
+                font-size: 1.1em;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    #appartment-grid {
+        padding: 2.5em;
+        grid-gap: 2.5em;
+
+        .appartment-card {
+            a {
+                h4 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    #appartment-grid {
+        padding: 2em;
+        grid-gap: 2em;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+    #appartment-grid {
+        padding: 1.5em;
+        grid-gap: 1.5em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+    #appartment-grid {
+        .appartment-card {
+            a {
+                h4 {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #appartment-grid {
+        padding: 0px;
+        background-color: transparent;
+        grid-template-columns: none;
+        grid-gap: 1.5em;
+
+
+        .appartment-card {
+            padding-top: 76%;
+        }
+    }
+}

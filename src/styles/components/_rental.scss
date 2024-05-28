@@ -7,17 +7,18 @@
         .presentation-details {
             display: flex;
             flex-direction: column;
+            max-width: 80%;
 
             h1 {
                 color: $main-color;
-                font-size: 36px;
+                font-size: 2.25em;
                 font-weight: 500;
                 margin: 0px;
             }
 
             p {
-                margin-top: 10px;
-                font-size: 17px;
+                margin-top: 1%;
+                font-size: 1.05em;
             }
 
 
@@ -29,11 +30,11 @@
                     color: white;
                     background-color: $main-color;
                     font-weight: 600;
-                    font-size: 14px;
+                    font-size: 0.87em;
                     border-radius: 13px;
-                    height: 25px;
-                    padding: 6px 25px 2px 25px;
-                    margin-right: 10px;
+                    height: 1.7em;
+                    padding: 0.6% 2.8% 0.2% 2.8%;
+                    margin-right: 1%;
                 }
             }
         }
@@ -51,22 +52,24 @@
                 p {
                     color: $main-color;
                     white-space: pre-wrap;
-                    font-size: 18px;
+                    font-size: 1.1em;
                     font-weight: 400;
                     align-content: center;
                     text-align: right;
-                    padding-right: 10px;
+                    padding-right: 5%;
                     margin: 0;
                 }
 
                 img {
                     border-radius: 50%;
                     width: 40%;
+                    height: fit-content;
+                    align-self: center;
                 }
             }
 
             .rating {
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 justify-content: flex-end;
                 display: flex;
 
@@ -81,5 +84,143 @@
     .drop-down-menus {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+    #rental {
+
+        .presentation {
+
+            .presentation-details {
+
+                h1 {
+                    font-size: 1.8em;
+                }
+            }
+
+            .presentation-hoster {
+                .rating {
+
+                    i {
+                        font-size: 1.25em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 450px) and (max-width: 650px) {
+    #rental {
+
+        .presentation {
+
+            .presentation-details {
+                width: 75%;
+
+                h1 {
+                    font-size: 1.4em;
+                }
+
+                .tags {
+                    flex-wrap: wrap;
+                }
+            }
+
+            .presentation-hoster {
+
+                .hoster-details {
+                    p {
+                        font-size: 1em;
+                        line-height: 1.2em;
+                    }
+                }
+
+                .rating {
+
+                    i {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    #rental {
+
+        .presentation {
+            flex-direction: column;
+
+            .presentation-details {
+                width: 100%;
+
+                h1 {
+                    font-weight: 400;
+                    font-size: 1.4em;
+                    line-height: 1.5em;
+                }
+
+                p {
+                    margin: 2% 0% 3%;
+                    font-size: 1em;
+                    line-height: 1.4em;
+                    padding-right: 8%;
+                }
+
+                .tags {
+                    flex-wrap: wrap;
+                    margin-bottom: 0.5em;
+
+                    .tag {
+                        text-align: center;
+                        border-radius: 7px;
+                        font-size: 0.8em;
+                        margin: 0% 2.5% 2.5% 0%;
+                        padding: 1% 6% 0% 6%;
+                    }
+                }
+            }
+
+            .presentation-hoster {
+                flex-direction: row-reverse;
+                align-items: center;
+                margin-left: 0px;
+                width: 100%;
+                display: flex;
+
+                .hoster-details {
+                    padding-bottom: 0%;
+
+                    img {
+                        width: 30%;
+                    }
+
+                    p {
+                        line-height: 1.4em;
+                        font-size: 1em;
+                    }
+                }
+
+                .rating {
+                    flex-wrap: nowrap;
+                    margin-right: auto;
+                    justify-content: flex-start;
+
+                    i {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .drop-down-menus {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
     }
 }

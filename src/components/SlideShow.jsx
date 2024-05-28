@@ -32,7 +32,7 @@ const Slideshow = ({ pictures }) => {
         <p>{counter + 1} / {pictures.length}</p>
         </>
       )}
-      <img src={pictures[counter]} className='slide' />
+      <img src={pictures[counter]} className='slide' alt='Retal picture' />
     </div>
   )
 };

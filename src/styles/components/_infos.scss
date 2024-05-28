@@ -10,8 +10,29 @@
             border-radius: 5px;
 
             .dropdown-name {
-                margin: 10px 5px;
+                margin: 1% 0.5%;
                 font-size: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #infos-section {
+
+        .dropdown {
+            width: 100%;
+
+            .dropdown-title {
+
+                .dropdown-name {
+                    margin: 2% 1%;
+                    font-size: 1em;
+                }
+            }
+
+            .dropdown-text {
+                font-size: 1em;
             }
         }
     }

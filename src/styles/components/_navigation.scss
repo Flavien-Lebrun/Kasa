@@ -3,29 +3,125 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    ul {
+    img {
+        width: 17.2%;
+    }
+
+    div {
         display: flex;
         list-style-type: none;
+        padding-left: 0px;
 
         a {
-            text-decoration: none;
-            padding-left: 40px;
+            align-self: center;
 
             :hover {
-                border-bottom: 2px solid black;
+                border-bottom: 1.5px solid black;
             }
 
-            li {
-                border-bottom: 2px solid transparent;
-                font-size: 25px;
-                height: 30px;
+            p {
+                border-bottom: 1.5px solid transparent;
+                font-size: 1.6em;
+                height: 1.25em;
+                font-weight: 400;
             }
+        }
+
+        #about-button {
+            padding-left: 3.5em;
         }
 
         .nav-active {
 
-            li {
-                border-bottom: 2px solid black;
+            p {
+                border-bottom: 1.5px solid black;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    #navigation {
+
+        img {
+            width: 20%;
+        }
+
+        div {
+
+            a {
+
+                p {
+                    border-bottom: 0.5px solid transparent;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 450px) and (max-width: 700px) {
+    #navigation {
+
+        img {
+            width: 25%;
+        }
+
+        div {
+
+            a {
+
+                p {
+                    border-bottom: 0.5px solid transparent;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #navigation {
+
+        img {
+            width: 40%;
+        }
+
+        div {
+            text-transform: uppercase;
+
+            a {
+                :hover {
+                    border-bottom: 0.5px solid black;
+                }
+
+                p {
+                    border-bottom: 0.5px solid transparent;
+                    font-size: 0.8em;
+                }
+            }
+
+            #about-button {
+                padding-left: 3em;
+            }
+
+            .nav-active {
+
+                p {
+                    border-bottom: 0.5px solid black;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    #navigation {
+
+        div {
+
+            #about-button {
+                padding-left: 2em;
             }
         }
     }

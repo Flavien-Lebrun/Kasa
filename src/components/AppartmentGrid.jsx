@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import jsonData from '../assets/appartment.json';
 
-function AppartmentCarousel() {
+function AppartmentGrid() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -9,7 +9,7 @@ function AppartmentCarousel() {
   }, []);
 
   return (
-    <div id='appartment-carousel'>
+    <div id='appartment-grid'>
         {data.map((item, index) => (
             <figure key={index} className="appartment-card">
                 <a href={`/rental/${item.id}`}>
@@ -22,4 +22,4 @@ function AppartmentCarousel() {
   );
 }
 
-export default AppartmentCarousel;
+export default AppartmentGrid;

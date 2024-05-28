@@ -1,7 +1,7 @@
 #slideshow {
     display: flex;
     position: relative;
-    height: 415px;
+    height: 26em;
     align-items: center;
     margin-bottom: 2em;
 
@@ -10,11 +10,11 @@
     }
 
     .left {
-        left: 20px;
+        left: 1.5%;
     }
 
     .right {
-        right: 20px;
+        right: 1.5%;
     }
 
     .slide {
@@ -29,7 +29,42 @@
         left: 50%;
         bottom: 0%;
         color: white;
-        font-size: 18px;
+        font-size: 1.15em;
         font-weight: 500;
+    }
+}
+
+@media (min-width: 600px) and (max-width : 800px) {
+    #slideshow {
+        height: 22em;
+
+        .arrow {
+            width: 7%;
+        }
+    }
+}
+
+@media (min-width: 450px) and (max-width : 600px) {
+    #slideshow {
+        height: 20em;
+
+        .arrow {
+            width: 5%;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #slideshow {
+        height: 18em;
+        margin-bottom: 1em;
+
+        p {
+            display: none;
+        }
+
+        .arrow {
+            width: 4%;
+        }
     }
 }
