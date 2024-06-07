@@ -6,9 +6,7 @@ import Rental from '../components/Rental';
 const Appartment = () => {
     return (
         <>
-            <Header />
             <Rental />
-            <Footer />
         </>
     );
 };

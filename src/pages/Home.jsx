@@ -7,10 +7,8 @@ import AppartmentGrid from '../components/AppartmentGrid';
 const Home = () => {
     return (
         <>
-            <Header />
             <Banner imgsrc="src/assets/cove.png" opacityValue={0.6} text={"Chez vous, <br>partout et ailleurs"} />
             <AppartmentGrid />
-            <Footer />
         </>
     );
 };

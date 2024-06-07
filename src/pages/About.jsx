@@ -7,10 +7,8 @@ import Infos from '../components/Infos';
 const About = () => {
     return (
         <>
-            <Header />
             <Banner imgsrc="src/assets/mountains.png" opacityValue={0.3} />
             <Infos />
-            <Footer />
         </>
     );
 };

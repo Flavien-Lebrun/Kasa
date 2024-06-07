@@ -1,4 +1,4 @@
-body {
+main {
     #infos-section {
         flex-direction: column;
         display: flex;
@@ -23,7 +23,7 @@ body {
 
 /*Mobile*/
 @media (min-width: 320px) and (max-width: 768px) {
-    body {
+    main {
         #infos-section {
             margin-top: 0px;
             margin-bottom: 0px;

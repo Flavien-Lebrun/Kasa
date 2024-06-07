@@ -6,9 +6,7 @@ import NotFound from '../components/NotFound';
 const Error = () => {
     return (
         <>
-            <Header />
             <NotFound />
-            <Footer />
         </>
     );
 };
