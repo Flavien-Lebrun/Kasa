@@ -3,10 +3,10 @@ import kasaLogo from '../assets/kasawhite.svg'
 
 const Footer = () => {
     return (
-        <div id='footer'>
+        <footer>
             <img src={kasaLogo} alt="Kasa logo" />
             <p>© 2020 Kasa. All rights reserved</p>
-        </div>
+        </footer>
     );
 };
 

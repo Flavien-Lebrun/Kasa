@@ -1,17 +1,36 @@
-#infos-section {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
+body {
+    #infos-section {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
 
-    .dropdown {
-        width: 83%;
+        .dropdown {
+            width: 83%;
 
-        .dropdown-title {
-            border-radius: 5px;
+            .dropdown-title {
+                border-radius: 5px;
 
-            .dropdown-name {
-                margin: 1% 0.5%;
-                font-size: 25px;
+                .dropdown-name {
+                    margin: 1% 0.5%;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    body {
+        #infos-section {
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            .dropdown {
+                width: 100%;
+                margin: 0em 0em 1.5em 0em;
             }
         }
     }
@@ -21,7 +40,6 @@
     #infos-section {
 
         .dropdown {
-            width: 100%;
 
             .dropdown-title {
 

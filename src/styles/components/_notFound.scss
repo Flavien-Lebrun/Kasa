@@ -27,6 +27,29 @@
     }
 }
 
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    #notFound {
+        h1 {
+            margin: 20% 0% 20% 0%;
+        }
+
+        p {
+            text-align: center;
+            white-space: pre-wrap;
+
+            br {
+                display: flex;
+            }
+        }
+
+        a {
+            font-size: 0.8em;
+            margin: 20% 0% 20% 0%;
+        }
+    }
+}
+
 @media (min-width: 900px) and (max-width: 1100px) {
     #notFound {
 

@@ -1,17 +1,17 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ImageBanner from '../components/ImageBanner';
+import Banner from '../components/Banner';
 import AppartmentGrid from '../components/AppartmentGrid';
 
 const Home = () => {
     return (
-        <div>
-            <Navigation />
-            <ImageBanner imgsrc="src/assets/cove.png" opacityValue={0.6} text={"Chez vous, partout et ailleurs"} />
+        <>
+            <Header />
+            <Banner imgsrc="src/assets/cove.png" opacityValue={0.6} text={"Chez vous, <br>partout et ailleurs"} />
             <AppartmentGrid />
             <Footer />
-        </div>
+        </>
     );
 };
 

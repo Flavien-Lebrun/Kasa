@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink } from "react-router-dom"
 import kasaLogo from '../assets/kasalogo.svg'
 
-const Navigation = () => {
+const Header = () => {
     return (
-        <div id="navigation">
+        <header>
             <img src={kasaLogo} alt="Kasa logo" />
             <div>
                 <div>
@@ -16,8 +16,8 @@ const Navigation = () => {
                     </NavLink>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 
-export default Navigation;
+export default Header;

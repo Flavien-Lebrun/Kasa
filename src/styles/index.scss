@@ -1,9 +1,9 @@
 $main-color: #FF6060;
 $second-color: #F6F6F6;
 
-@import "./components/navigation";
+@import "./components/header";
 @import "./components/footer";
-@import "./components/imageBanner";
+@import "./components/banner";
 @import "./components/appartmentGrid";
 @import "./components/rental";
 @import "./components/slideShow";
@@ -15,6 +15,7 @@ $second-color: #F6F6F6;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  width: 100%;
 }
 
 a {
@@ -28,6 +29,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
@@ -47,24 +49,27 @@ button {
   transition: border-color 0.25s;
 }
 
-#root {
-  width: 100%;
-}
-
+header,
 #appartment-grid,
 #banner,
-#navigation,
 #rental,
 #infos-section,
 #notFound {
   margin: 3em 6em 3em 6em;
 }
 
+@media (min-width: 1400px) {
+  body {
+    margin: auto;
+    max-width: 1400px;
+  }
+}
+
 @media (min-width: 900px) and (max-width: 1200px) {
 
+  header,
   #appartment-grid,
   #banner,
-  #navigation,
   #rental,
   #infos-section,
   #notFound {
@@ -74,9 +79,9 @@ button {
 
 @media (min-width: 700px) and (max-width: 900px) {
 
+  header,
   #appartment-grid,
   #banner,
-  #navigation,
   #rental,
   #infos-section,
   #notFound {
@@ -86,9 +91,9 @@ button {
 
 @media (min-width: 450px) and (max-width: 700px) {
 
+  header,
   #appartment-grid,
   #banner,
-  #navigation,
   #rental,
   #infos-section,
   #notFound {
@@ -98,9 +103,9 @@ button {
 
 @media (max-width: 450px) {
 
+  header,
   #appartment-grid,
   #banner,
-  #navigation,
   #rental,
   #infos-section,
   #notFound {

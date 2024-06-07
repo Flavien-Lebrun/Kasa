@@ -9,7 +9,7 @@ function AppartmentGrid() {
   }, []);
 
   return (
-    <div id='appartment-grid'>
+    <section id='appartment-grid'>
         {data.map((item, index) => (
             <figure key={index} className="appartment-card">
                 <a href={`/rental/${item.id}`}>
@@ -18,7 +18,7 @@ function AppartmentGrid() {
                     </a>
             </figure>
         ))}
-    </div>
+    </section>
   );
 }
 

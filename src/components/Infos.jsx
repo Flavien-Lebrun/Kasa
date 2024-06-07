@@ -10,7 +10,7 @@ const Infos = () => {
       }, []);
 
     return (
-        <div id='infos-section'>
+        <section id='infos-section'>
             {data.map((item, index) => (
                 <TextDropDown
                 key={index}
@@ -19,7 +19,7 @@ const Infos = () => {
                 isAList={item.isAList}
                 />
             ))}
-        </div>
+        </section>
     );
 };
 

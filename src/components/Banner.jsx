@@ -3,9 +3,8 @@ import { useLocation } from 'react-router-dom';
 import homeBanner from '../assets/cove.png'
 import aboutBanner from '../assets/mountains.png'
 
-const ImageBanner = ({ opacityValue, text }) => {
+const Banner = ({ opacityValue, text }) => {
   const location = useLocation();
-  // Déterminez quelle image utiliser en fonction de l'URL
   let backgroundImage;
   if (location.pathname === '/') {
     backgroundImage = homeBanner;
@@ -16,20 +15,20 @@ const ImageBanner = ({ opacityValue, text }) => {
   }
 
   return (
-    <div id="banner">
+    <section id="banner">
         <div
             className="banner-image"
             style={{ backgroundImage: `url(${backgroundImage})` }}/>
         <span className="banner-mask" style={{ opacity: opacityValue}} />
         {text && (
           <React.Fragment>
-            <p className='banner-content border'>{text}</p>
-            <p className='banner-content'>{text}</p>
+            <p className='banner-content border' dangerouslySetInnerHTML={{ __html: text }}/>
+            <p className='banner-content' dangerouslySetInnerHTML={{ __html: text }}/>
           </React.Fragment>
         )}
-    </div>
+    </section>
   );
 };
 
 
-export default ImageBanner;
+export default Banner;

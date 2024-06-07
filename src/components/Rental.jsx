@@ -34,7 +34,7 @@ const Rental = () => {
   const formattedName = host.name.replace(" ", "\n");
 
   return (
-    <div id='rental'>
+    <section id='rental'>
         <Slideshow pictures={pictures} />
       <div className="presentation">
         <div className='presentation-details'>
@@ -58,7 +58,7 @@ const Rental = () => {
         <TextDropDown dropdownname = "Description" text={description} isAList={false} />
         <TextDropDown dropdownname = "Équipements" text={equipments} isAList={true} />
       </div>
-    </div>
+    </section>
   );
 };
 

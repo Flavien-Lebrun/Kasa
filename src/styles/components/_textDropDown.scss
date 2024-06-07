@@ -65,7 +65,13 @@
     }
 }
 
-@media (min-width: 650px) and (max-width: 1000px) {}
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .dropdown {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+}
 
 @media (min-width: 450px) and (max-width: 650px) {
     .dropdown {
@@ -90,8 +96,6 @@
 
 @media (max-width: 450px) {
     .dropdown {
-        width: 100%;
-        margin-top: 1.5em;
 
         .dropdown-title {
             border-radius: 7px;

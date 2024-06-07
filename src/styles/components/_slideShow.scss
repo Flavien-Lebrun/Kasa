@@ -34,6 +34,16 @@
     }
 }
 
+/*Mobile*/
+@media (min-width: 320px) and (max-width: 768px) {
+    #slideshow {
+
+        p {
+            display: none;
+        }
+    }
+}
+
 @media (min-width: 600px) and (max-width : 800px) {
     #slideshow {
         height: 22em;
@@ -56,12 +66,8 @@
 
 @media (max-width: 450px) {
     #slideshow {
-        height: 18em;
+        height: 14em;
         margin-bottom: 1em;
-
-        p {
-            display: none;
-        }
 
         .arrow {
             width: 4%;
